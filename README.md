@@ -1,3 +1,7 @@
+**🡆 Forked** from [`monkeyWzr/hugo-theme-cactus`](https://github.com/monkeyWzr/hugo-theme-cactus) so I can make local changes yet still track improvements from the creator -- davidbak
+
+---
+
 ## Cactus
 
 A hugo theme for personal blog. Fork from hexo theme [cactus](https://github.com/probberechts/hexo-theme-cactus) created by @probberechts.
