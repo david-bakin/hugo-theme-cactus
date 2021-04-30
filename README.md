@@ -1,5 +1,7 @@
 **🡆 Forked** from [`monkeyWzr/hugo-theme-cactus`](https://github.com/monkeyWzr/hugo-theme-cactus) so I can make local changes yet still track improvements from the creator -- davidbak
 
+* Cherry-picked 60baee593 from [`lollipopman/hugo-theme-cactus`](https://github.com/lollipopman/hugo-theme-cactus/commit/60baee593a464fa5da55fdcde3e9ef6c22bad126) so I can change the heading "Writings" to "Posts" (or anything else) on home page.
+
 ---
 
 ## Cactus
