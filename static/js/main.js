@@ -59,7 +59,9 @@ $(document).ready(function() {
         var topDistance = menu.offset().top;
 
         // hide only the navigation links on desktop
-        if (!nav.is(":visible") && topDistance < 50) {
+        // "Fixed navigation disappearing issue in chrome version 100" (https://github.com/monkeyWzr/hugo-theme-cactus/pull/121/files)
+        // patched by hand -- dsb
+        if (!nav.is(":visible") && topDistance < 88) {
           nav.show();
         } else if (nav.is(":visible") && topDistance > 100) {
           nav.hide();
@@ -67,9 +69,7 @@ $(document).ready(function() {
 
         // on tablet, hide the navigation icon as well and show a "scroll to top
         // icon" instead
-        // "Fixed navigation disappearing issue in chrome version 100" (https://github.com/monkeyWzr/hugo-theme-cactus/pull/121/files)
-        // patched by hand -- dsb
-        if ( ! $( "#menu-icon" ).is(":visible") && topDistance < 88 ) {
+        if ( ! $( "#menu-icon" ).is(":visible") && topDistance < 50 ) {
           $("#menu-icon-tablet").show();
           $("#top-icon-tablet").hide();
         } else if (! $( "#menu-icon" ).is(":visible") && topDistance > 100) {
