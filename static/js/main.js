@@ -67,7 +67,9 @@ $(document).ready(function() {
 
         // on tablet, hide the navigation icon as well and show a "scroll to top
         // icon" instead
-        if ( ! $( "#menu-icon" ).is(":visible") && topDistance < 50 ) {
+        // "Fixed navigation disappearing issue in chrome version 100" (https://github.com/monkeyWzr/hugo-theme-cactus/pull/121/files)
+        // patched by hand -- dsb
+        if ( ! $( "#menu-icon" ).is(":visible") && topDistance < 88 ) {
           $("#menu-icon-tablet").show();
           $("#top-icon-tablet").hide();
         } else if (! $( "#menu-icon" ).is(":visible") && topDistance > 100) {
