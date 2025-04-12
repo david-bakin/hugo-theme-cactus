@@ -14,7 +14,7 @@
         {{ .Title }}
       </h1>
       <div class="meta">
-        {{ if or .Site.Author .Site.Title }}
+        <!-- {{ if or .Site.Author .Site.Title }}
           <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
             <span itemprop="name">
               {{ if .Site.Author }}
@@ -24,7 +24,7 @@
               {{ end }}
             </span>
           </span>
-        {{ end }}
+        {{ end }} -->
         <div class="postdate">
           {{ $dataFormat := .Site.Params.dateFormat | default "2006-01-02" }}
           <time datetime="{{ .Date }}" itemprop="datePublished">{{ .Date.Format $dataFormat }}</time>
